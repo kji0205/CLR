@@ -24,6 +24,9 @@ namespace MySerialization
             objectGraph = (List<String>)DeserializeFromMemory(stream);
             foreach (var s in objectGraph) Console.WriteLine(s);
 
+            // P720
+            Class1.OptInSerialization();
+
             Console.ReadLine();
         }
 
